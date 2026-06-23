@@ -817,6 +817,25 @@ img {
   margin-top: 8px;
 }
 
+.page-header[data-layout="article"] {
+  text-align: left;
+  padding: calc(var(--header-height) + 40px) 0 32px;
+}
+.page-header[data-layout="article"] .blog-breadcrumb {
+  margin-bottom: 8px;
+}
+.page-header[data-layout="article"] h1 {
+  font-size: 1.75rem;
+  margin-bottom: 12px;
+}
+.page-header[data-layout="article"] .meta {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-top: 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
 /* ===== About Page ===== */
 .about-content {
   max-width: 800px;
