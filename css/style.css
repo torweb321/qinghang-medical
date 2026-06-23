@@ -796,6 +796,26 @@ img {
   margin: 0 auto;
 }
 
+/* ===== Blog Breadcrumb ===== */
+.blog-breadcrumb {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+.blog-breadcrumb a {
+  color: var(--primary);
+  text-decoration: none;
+}
+.blog-breadcrumb .sep {
+  margin: 0 6px;
+  color: var(--text-light);
+}
+.page-header .meta {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-top: 8px;
+}
+
 /* ===== About Page ===== */
 .about-content {
   max-width: 800px;

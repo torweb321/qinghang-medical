@@ -26,9 +26,17 @@
         if (translations['zh-CN'][key]) {
           if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
             el.placeholder = translations['zh-CN'][key];
+          } else if (el.tagName === 'IMG') {
+            el.alt = translations['zh-CN'][key];
           } else {
             el.innerHTML = translations['zh-CN'][key];
           }
+        }
+      });
+      document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
+        var key = el.dataset.i18nAlt;
+        if (translations['zh-CN'][key]) {
+          el.alt = translations['zh-CN'][key];
         }
       });
     } else {
@@ -39,9 +47,17 @@
         if (t[key]) {
           if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
             el.placeholder = t[key];
+          } else if (el.tagName === 'IMG') {
+            el.alt = t[key];
           } else {
             el.innerHTML = t[key];
           }
+        }
+      });
+      document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
+        var key = el.dataset.i18nAlt;
+        if (t[key]) {
+          el.alt = t[key];
         }
       });
     }
@@ -71,9 +87,16 @@
         if (translations['zh-CN'][key]) return;
         if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
           translations['zh-CN'][key] = el.placeholder;
+        } else if (el.tagName === 'IMG') {
+          translations['zh-CN'][key] = el.alt;
         } else {
           translations['zh-CN'][key] = el.innerHTML;
         }
+      });
+      document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
+        var key = el.dataset.i18nAlt;
+        if (translations['zh-CN'][key]) return;
+        translations['zh-CN'][key] = el.alt;
       });
       applyLanguage(getCurrentLang());
     }
