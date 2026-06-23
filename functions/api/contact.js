@@ -1,5 +1,7 @@
 // Cloudflare Pages Function — POST /api/contact
-// Environment variables set in Cloudflare Dashboard → Pages → project → Settings → Environment variables
+
+var TG_BOT_TOKEN = '8977663630:AAFjtrA-og7IAEJmDu5Lq187Ntu-ZGF28D4';
+var TG_CHAT_ID = '7561488528';
 
 export async function onRequest(context) {
   var request = context.request;
@@ -45,13 +47,15 @@ export async function onRequest(context) {
 
   var errors = [];
 
-  // Telegram
-  if (env.TG_BOT_TOKEN && env.TG_CHAT_ID) {
+  var botToken = env.TG_BOT_TOKEN || TG_BOT_TOKEN;
+  var chatId = env.TG_CHAT_ID || TG_CHAT_ID;
+
+  if (botToken && chatId) {
     try {
-      await fetch('https://api.telegram.org/bot' + env.TG_BOT_TOKEN + '/sendMessage', {
+      await fetch('https://api.telegram.org/bot' + botToken + '/sendMessage', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chat_id: env.TG_CHAT_ID, text: text })
+        body: JSON.stringify({ chat_id: chatId, text: text })
       });
     } catch (e) {
       errors.push('Telegram: ' + e.message);
