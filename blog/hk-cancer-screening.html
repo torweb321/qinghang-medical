@@ -32,12 +32,18 @@
       <div class="container nav__container">
         <a href="../index.html" class="nav__logo">启航国际医疗</a>
         <ul class="nav__menu">
-          <li><a href="../index.html">首页</a></li>
-          <li><a href="../services.html">服务</a></li>
-          <li><a href="../blog/index.html" class="active">健康资讯</a></li>
-          <li><a href="../about.html">关于我们</a></li>
-          <li><a href="../contact.html">联络我们</a></li>
+          <li><a href="../index.html"><span data-i18n="nav_home">首页</span></a></li>
+          <li><a href="../services.html"><span data-i18n="nav_services">服务项目</span></a></li>
+          <li><a href="../blog/index.html" class="active"><span data-i18n="nav_blog">健康资讯</span></a></li>
+          <li><a href="../about.html"><span data-i18n="nav_about">关于我们</span></a></li>
+          <li><a href="../contact.html"><span data-i18n="nav_contact">免费咨询</span></a></li>
         </ul>
+        <a href="../contact.html" class="nav-cta" data-i18n="nav_cta">免费咨询</a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="zh-CN" onclick="i18n.switchTo('zh-CN')">简</button>
+          <button class="lang-btn" data-lang="zh-HK" onclick="i18n.switchTo('zh-HK')">繁</button>
+          <button class="lang-btn" data-lang="en" onclick="i18n.switchTo('en')">EN</button>
+        </div>
       </div>
     </nav>
   </header>
@@ -52,7 +58,7 @@
   <section class="section">
     <div class="container">
       <div class="article">
-        <h1>香港癌症筛查项目介绍</h1>
+        <h1 data-i18n="blog_article_hk-cancer-screening">香港癌症筛查项目介绍</h1>
         <div class="meta">2025年4月 · 癌症筛查 · 预计阅读 9 分钟</div>
 
         <p>癌症是香港的头号杀手，根据香港卫生署的统计数据，香港每年新增癌症病例超过35,000例，其中肺癌、结直肠癌、乳腺癌、肝癌和胃癌位居发病率前列。癌症筛查能够在症状出现之前发现早期病变，显著提高治愈率和生存率。香港的癌症筛查体系融合了国际标准和本地实践经验，筛查手段和技术水平与国际接轨。本文为您系统介绍香港常见的癌症筛查项目。</p>
@@ -194,21 +200,21 @@
   <footer class="footer">
     <div class="container footer__container">
       <div class="footer__col">
-        <h4>启航国际医疗</h4>
-        <p>专注跨境医疗咨询服务，为您连接香港优质医疗资源。</p>
+        <h4 data-i18n="footer_title">启航国际医疗</h4>
+        <p data-i18n="footer_desc">专注跨境医疗咨询服务，为您连接香港优质医疗资源。</p>
       </div>
       <div class="footer__col">
-        <h4>快速链接</h4>
+        <h4 data-i18n="footer_quick">快速链接</h4>
         <ul>
-          <li><a href="../index.html">首页</a></li>
-          <li><a href="../services.html">服务</a></li>
-          <li><a href="../blog/index.html">健康资讯</a></li>
-          <li><a href="../about.html">关于我们</a></li>
-          <li><a href="../contact.html">联络我们</a></li>
+          <li><a href="../index.html"><span data-i18n="nav_home">首页</span></a></li>
+          <li><a href="../services.html"><span data-i18n="nav_services">服务项目</span></a></li>
+          <li><a href="../blog/index.html"><span data-i18n="nav_blog">健康资讯</span></a></li>
+          <li><a href="../about.html"><span data-i18n="nav_about">关于我们</span></a></li>
+          <li><a href="../contact.html"><span data-i18n="nav_contact">免费咨询</span></a></li>
         </ul>
       </div>
       <div class="footer__col">
-        <h4>联络方式</h4>
+        <h4 data-i18n="footer_contact_title">联络方式</h4>
         <p>电话：+852 1234 5678</p>
         <p>电邮：info@example.com</p>
         <p>地址：香港中环皇后大道中88号</p>
@@ -216,10 +222,13 @@
     </div>
     <div class="footer__bottom">
       <div class="container">
-        <p>&copy; 2025 启航国际医疗. All rights reserved.</p>
+        <small data-i18n="footer_copyright">&copy; 2025 启航国际医疗. All rights reserved.</small>
       </div>
     </div>
   </footer>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/i18n/en.js"></script>
+  <script src="../js/i18n/zh-hk.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

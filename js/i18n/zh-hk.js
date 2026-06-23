@@ -287,6 +287,18 @@ blog_11_desc:"內地居民赴港就醫的證件要求、簽注類型、停留期
 blog_12_desc:"內地醫保在香港的使用情況、商業醫療保險覆蓋範圍及理賠流程說明。",
 blog_13_desc:"不同體檢項目的報告出具時間、領取方式及報告解讀服務的詳細說明。",
 
+"blog_article_hk-vs-mainland-checkup":"香港體檢和內地體檢有什麼區別",
+"blog_article_hk-petct-guide":"香港PET-CT檢查指南",
+"blog_article_hk-cancer-screening":"香港癌症篩查項目介紹",
+"blog_article_hk-checkup-preparation":"香港體檢需要準備什麼",
+"blog_article_cuhk-hospital":"香港中文大學醫院體檢中心詳細介紹",
+"blog_article_gleneagles-hk-guide":"港怡醫院國際患者服務指南",
+"blog_article_hk-private-hospital-booking":"香港私立醫院如何預約？完整流程指南（2025）",
+"blog_article_sg-second-opinion":"新加坡第二診療意見流程全攻略",
+"blog_article_sg-medical-cost":"新加坡就醫費用解析",
+"blog_article_hk-visa-guide":"內地居民赴港就醫需要什麼證件",
+"blog_article_hk-insurance-guide":"跨境就醫保險可以報銷嗎",
+
 faq_q1:"香港體檢多久可以出報告？",
 faq_a1:"一般情況下，基礎體檢報告可在體檢結束後1-2小時內領取；部分需要化驗的項目（如血液檢查）通常需要3-5個工作日。影像學檢查（如PET-CT、MRI）的報告可能需要5-7個工作日。我們會協助您跟進報告進度，並提供中文解讀服務。",
 faq_q2:"去香港體檢需要港澳通行證嗎？",

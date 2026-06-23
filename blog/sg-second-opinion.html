@@ -32,12 +32,18 @@
       <div class="container nav__container">
         <a href="../index.html" class="nav__logo">启航国际医疗</a>
         <ul class="nav__menu">
-          <li><a href="../index.html">首页</a></li>
-          <li><a href="../services.html">服务</a></li>
-          <li><a href="../blog/index.html" class="active">健康资讯</a></li>
-          <li><a href="../about.html">关于我们</a></li>
-          <li><a href="../contact.html">联络我们</a></li>
+          <li><a href="../index.html"><span data-i18n="nav_home">首页</span></a></li>
+          <li><a href="../services.html"><span data-i18n="nav_services">服务项目</span></a></li>
+          <li><a href="../blog/index.html" class="active"><span data-i18n="nav_blog">健康资讯</span></a></li>
+          <li><a href="../about.html"><span data-i18n="nav_about">关于我们</span></a></li>
+          <li><a href="../contact.html"><span data-i18n="nav_contact">免费咨询</span></a></li>
         </ul>
+        <a href="../contact.html" class="nav-cta" data-i18n="nav_cta">免费咨询</a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="zh-CN" onclick="i18n.switchTo('zh-CN')">简</button>
+          <button class="lang-btn" data-lang="zh-HK" onclick="i18n.switchTo('zh-HK')">繁</button>
+          <button class="lang-btn" data-lang="en" onclick="i18n.switchTo('en')">EN</button>
+        </div>
       </div>
     </nav>
   </header>
@@ -52,7 +58,7 @@
   <section class="section">
     <div class="container">
       <div class="article">
-        <h1>新加坡第二诊疗意见流程全攻略</h1>
+        <h1 data-i18n="blog_article_sg-second-opinion">新加坡第二诊疗意见流程全攻略</h1>
         <div class="meta">2025年1月 · 新加坡医疗 · 预计阅读 7 分钟</div>
 
         <p>面对重大疾病诊断，您是否曾感到不安或怀疑？一项研究表明，约30-40%的初诊患者在获得第二诊疗意见后，治疗方案发生了改变。第二诊疗意见不是不信任医生，而是对自己健康负责的重要决策方式。新加坡作为亚洲顶级的医疗中心，近年来吸引了大量海外患者前往寻求第二诊疗意见。本文将为您详细解析新加坡第二诊疗意见的完整流程。</p>
@@ -201,21 +207,21 @@
   <footer class="footer">
     <div class="container footer__container">
       <div class="footer__col">
-        <h4>启航国际医疗</h4>
-        <p>专注跨境医疗咨询服务，为您连接香港优质医疗资源。</p>
+        <h4 data-i18n="footer_title">启航国际医疗</h4>
+        <p data-i18n="footer_desc">专注跨境医疗咨询服务，为您连接香港优质医疗资源。</p>
       </div>
       <div class="footer__col">
-        <h4>快速链接</h4>
+        <h4 data-i18n="footer_quick">快速链接</h4>
         <ul>
-          <li><a href="../index.html">首页</a></li>
-          <li><a href="../services.html">服务</a></li>
-          <li><a href="../blog/index.html">健康资讯</a></li>
-          <li><a href="../about.html">关于我们</a></li>
-          <li><a href="../contact.html">联络我们</a></li>
+          <li><a href="../index.html"><span data-i18n="nav_home">首页</span></a></li>
+          <li><a href="../services.html"><span data-i18n="nav_services">服务项目</span></a></li>
+          <li><a href="../blog/index.html"><span data-i18n="nav_blog">健康资讯</span></a></li>
+          <li><a href="../about.html"><span data-i18n="nav_about">关于我们</span></a></li>
+          <li><a href="../contact.html"><span data-i18n="nav_contact">免费咨询</span></a></li>
         </ul>
       </div>
       <div class="footer__col">
-        <h4>联络方式</h4>
+        <h4 data-i18n="footer_contact_title">联络方式</h4>
         <p>电话：+852 1234 5678</p>
         <p>电邮：info@example.com</p>
         <p>地址：香港中环皇后大道中88号</p>
@@ -223,10 +229,13 @@
     </div>
     <div class="footer__bottom">
       <div class="container">
-        <p>&copy; 2025 启航国际医疗. All rights reserved.</p>
+        <small data-i18n="footer_copyright">&copy; 2025 启航国际医疗. All rights reserved.</small>
       </div>
     </div>
   </footer>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/i18n/en.js"></script>
+  <script src="../js/i18n/zh-hk.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

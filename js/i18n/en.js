@@ -234,7 +234,11 @@ faq_cross_border:"Cross-Border Care",
 blog_section_hk_checkup:"HK Health Check",
 blog_section_hk_hospitals:"HK Hospitals",
 blog_section_sg:"Singapore Healthcare",
-blog_section_faq:"Common Questions"
+blog_section_faq:"Common Questions",
+
+contact_email_label:"Email",
+contact_email_val:"qihangmedical@outlook.com",
+contact_hours_label:"Service Hours",
 
 footer_title:"Qihang International Medical",
 footer_desc:"Cross-border medical consultation and coordination services connecting patients to trusted healthcare in Hong Kong and Singapore. Professional, transparent, efficient, privacy-protected.",
@@ -283,6 +287,18 @@ blog_11_desc:"Comprehensive guide to document requirements, visa types, permitte
 blog_12_desc:"Explanation of mainland insurance coverage in Hong Kong, commercial health insurance scope, and the claims process for cross-border treatment.",
 blog_13_desc:"Detailed explanation of report turnaround times for different health check items, delivery methods, and interpretation services.",
 
+"blog_article_hk-vs-mainland-checkup":"HK vs Mainland Health Check: Key Differences",
+"blog_article_hk-petct-guide":"HK PET-CT Examination Guide",
+"blog_article_hk-cancer-screening":"Cancer Screening Programs in Hong Kong",
+"blog_article_hk-checkup-preparation":"What to Prepare for a HK Health Check",
+"blog_article_cuhk-hospital":"CUHK Medical Centre Health Check Guide",
+"blog_article_gleneagles-hk-guide":"Gleneagles HK International Patient Guide",
+"blog_article_hk-private-hospital-booking":"How to Book Hong Kong Private Hospitals (2025)",
+"blog_article_sg-second-opinion":"Singapore Second Opinion: Complete Guide",
+"blog_article_sg-medical-cost":"Singapore Medical Costs Explained",
+"blog_article_hk-visa-guide":"Documents Needed for Mainland Residents Traveling to HK for Medical Care",
+"blog_article_hk-insurance-guide":"Does Insurance Cover Cross-Border Medical Treatment?",
+
 faq_q1:"How long does it take to get HK health check results?",
 faq_a1:"Basic health check reports can usually be collected within 1-2 hours after the examination. Lab tests (such as blood work) typically take 3-5 working days. Imaging studies (PET-CT, MRI) may require 5-7 working days. We will help you track the progress and provide interpretation services in Chinese.",
 faq_q2:"Do I need a travel permit for a HK health check?",
@@ -312,6 +328,6 @@ faq_a13:"We provide medical consultation, hospital recommendations, appointment 
 faq_q14:"Is language a barrier for medical visits in Hong Kong?",
 faq_a14:"Most doctors at Hong Kong private hospitals have overseas backgrounds and can communicate in English and Cantonese. Mandarin services are increasingly available at larger private hospitals, with some having dedicated Mandarin-speaking staff. We provide full language support throughout your visit.",
 faq_q15:"What is the difference between Singapore and HK healthcare?",
-faq_a15:"Key differences: 1) Costs: Singapore private hospitals are typically 20-40% more expensive than HK; 2) Language: English is primary in Singapore but Mandarin is widely understood; 3) Referral process: Singapore typically requires a local doctor referral; 4) Specialties: HK offers better value for health checks and cancer screening, while Singapore excels in complex surgeries and critical care. We recommend the best destination based on your specific needs.",
+faq_a15:"Key differences: 1) Costs: Singapore private hospitals are typically 20-40% more expensive than HK; 2) Language: English is primary in Singapore but Mandarin is widely understood; 3) Referral process: Singapore typically requires a local doctor referral; 4) Specialties: HK offers better value for health checks and cancer screening, while Singapore excels in complex surgeries and critical care. We recommend the best destination based on your specific needs."
 
 })})();

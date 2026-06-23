@@ -27,7 +27,26 @@
   </style>
 </head>
 <body>
-  <header class="header">...(same header)...</header>
+  <header class="header">
+    <nav class="nav">
+      <div class="container nav__container">
+        <a href="../index.html" class="nav__logo">启航国际医疗</a>
+        <ul class="nav__menu">
+          <li><a href="../index.html"><span data-i18n="nav_home">首页</span></a></li>
+          <li><a href="../services.html"><span data-i18n="nav_services">服务项目</span></a></li>
+          <li><a href="../blog/index.html" class="active"><span data-i18n="nav_blog">健康资讯</span></a></li>
+          <li><a href="../about.html"><span data-i18n="nav_about">关于我们</span></a></li>
+          <li><a href="../contact.html"><span data-i18n="nav_contact">免费咨询</span></a></li>
+        </ul>
+        <a href="../contact.html" class="nav-cta" data-i18n="nav_cta">免费咨询</a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="zh-CN" onclick="i18n.switchTo('zh-CN')">简</button>
+          <button class="lang-btn" data-lang="zh-HK" onclick="i18n.switchTo('zh-HK')">繁</button>
+          <button class="lang-btn" data-lang="en" onclick="i18n.switchTo('en')">EN</button>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <div class="page-header">
     <div class="container">
@@ -39,7 +58,7 @@
   <section class="section">
     <div class="container">
       <div class="article">
-        <h1>香港体检和内地体检有什么区别</h1>
+        <h1 data-i18n="blog_article_hk-vs-mainland-checkup">香港体检和内地体检有什么区别</h1>
         <div class="meta">2025年1月 · 香港体检 · 预计阅读 6 分钟</div>
 
         <p>近年来，越来越多的内地居民选择赴香港进行年度体检。香港体检以检查项目全面、设备先进、报告与国际接轨等优势吸引了大量关注。那么，香港体检和内地体检究竟有哪些具体区别？本文将从多个维度进行详细对比，帮助您做出更明智的选择。</p>
@@ -116,7 +135,38 @@
     </div>
   </section>
 
-  <footer class="footer">...(same footer)...</footer>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__col">
+        <h4 data-i18n="footer_title">启航国际医疗</h4>
+        <p data-i18n="footer_desc">专注跨境医疗咨询服务，为您连接香港优质医疗资源。</p>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer_quick">快速链接</h4>
+        <ul>
+          <li><a href="../index.html"><span data-i18n="nav_home">首页</span></a></li>
+          <li><a href="../services.html"><span data-i18n="nav_services">服务项目</span></a></li>
+          <li><a href="../blog/index.html"><span data-i18n="nav_blog">健康资讯</span></a></li>
+          <li><a href="../about.html"><span data-i18n="nav_about">关于我们</span></a></li>
+          <li><a href="../contact.html"><span data-i18n="nav_contact">免费咨询</span></a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer_contact_title">联络方式</h4>
+        <p>电话：+852 1234 5678</p>
+        <p>电邮：info@example.com</p>
+        <p>地址：香港中环皇后大道中88号</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <small data-i18n="footer_copyright">&copy; 2025 启航国际医疗. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/i18n/en.js"></script>
+  <script src="../js/i18n/zh-hk.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>
