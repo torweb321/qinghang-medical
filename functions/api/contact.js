@@ -1,6 +1,4 @@
 // Cloudflare Pages Function — POST /api/contact
-// Environment variables set in Cloudflare Dashboard → Pages → project → Settings → Environment variables
-
 export async function onRequest(context) {
   var request = context.request;
   var env = context.env;
@@ -23,14 +21,21 @@ export async function onRequest(context) {
     });
   }
 
+  // Debug: check if env vars exist
+  var debug = {
+    has_token: !!env.TG_BOT_TOKEN,
+    has_chat: !!env.TG_CHAT_ID,
+    token_prefix: env.TG_BOT_TOKEN ? env.TG_BOT_TOKEN.substring(0, 8) + '...' : 'missing',
+    chat_id: env.TG_CHAT_ID || 'missing'
+  };
+
   var timestamp = new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Hong_Kong' });
   var services = Array.isArray(data.service) ? data.service.join(', ') : (data.service || '未选择');
   var destination = data.destination === 'other' && data.destination_other ? data.destination_other : (data.destination || '未选择');
 
   var text = [
     '📋 新咨询',
-    '━━━━━━━━━━━━━',
-    '⏰ ' + timestamp,
+    '━━━━━━━━━━━━━', '⏰ ' + timestamp,
     '━━━━━━━━━━━━━',
     '👤 姓名: ' + data.name,
     '🎂 年龄: ' + (data.age || '未填写'),
@@ -45,52 +50,25 @@ export async function onRequest(context) {
 
   var errors = [];
 
-  // Telegram
   if (env.TG_BOT_TOKEN && env.TG_CHAT_ID) {
     try {
-      await fetch('https://api.telegram.org/bot' + env.TG_BOT_TOKEN + '/sendMessage', {
+      var tg = await fetch('https://api.telegram.org/bot' + env.TG_BOT_TOKEN + '/sendMessage', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ chat_id: env.TG_CHAT_ID, text: text })
       });
+      var tgResult = await tg.json();
+      if (!tgResult.ok) errors.push('TG: ' + JSON.stringify(tgResult));
     } catch (e) {
-      errors.push('Telegram: ' + e.message);
+      errors.push('TG: ' + e.message);
     }
-  }
-
-  // Webhook
-  if (env.WEBHOOK_URL) {
-    try {
-      await fetch(env.WEBHOOK_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...data, _timestamp: timestamp })
-      });
-    } catch (e) {
-      errors.push('Webhook: ' + e.message);
-    }
-  }
-
-  // Google Sheets
-  if (env.GOOGLE_SCRIPT_URL) {
-    try {
-      await fetch(env.GOOGLE_SCRIPT_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: data.name, age: data.age || '', city: data.city || '',
-          service: services, destination: destination,
-          wechat: data.wechat || '', phone: data.phone,
-          message: data.message || '', timestamp: timestamp
-        })
-      });
-    } catch (e) {
-      errors.push('Google Sheets: ' + e.message);
-    }
+  } else {
+    errors.push('TG: env vars missing');
   }
 
   return new Response(JSON.stringify({
     success: true, message: '提交成功',
+    debug: debug,
     errors: errors.length > 0 ? errors : undefined
   }), { status: 200, headers: { 'Content-Type': 'application/json' } });
 }
