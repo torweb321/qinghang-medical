@@ -797,16 +797,17 @@ img {
 }
 
 /* ===== Blog Breadcrumb ===== */
-.blog-breadcrumb {
+.page-header .blog-breadcrumb {
   font-size: 0.85rem;
   color: var(--text-light);
   margin-bottom: 4px;
+  max-width: none;
 }
-.blog-breadcrumb a {
+.page-header .blog-breadcrumb a {
   color: var(--primary);
   text-decoration: none;
 }
-.blog-breadcrumb .sep {
+.page-header .blog-breadcrumb .sep {
   margin: 0 6px;
   color: var(--text-light);
 }
