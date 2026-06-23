@@ -450,6 +450,103 @@ img {
   font-weight: 600;
 }
 
+/* ===== Advantages / Why Us ===== */
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.advantage-item {
+  text-align: center;
+  padding: 32px 20px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--border);
+  transition: all 0.3s;
+}
+
+.advantage-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.advantage-icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.advantage-item h3 {
+  font-size: 1.05rem;
+  color: var(--secondary);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.advantage-item p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* ===== Cases / Patient Stories ===== */
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.case-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px 28px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: all 0.3s;
+}
+
+.case-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.case-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: rgba(13, 148, 136, 0.08);
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  letter-spacing: 0.3px;
+}
+
+.case-card h3 {
+  font-size: 1.05rem;
+  color: var(--secondary);
+  margin-bottom: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.case-card p {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.case-meta {
+  font-size: 0.78rem;
+  color: var(--text-lighter, #94a3b8);
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
 /* ===== Process ===== */
 .process-steps {
   display: grid;
@@ -1348,6 +1445,14 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .advantages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cases-grid {
+    grid-template-columns: 1fr;
+  }
+
   .process-steps {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1370,6 +1475,10 @@ img {
   .hero-buttons .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .advantages-grid {
+    grid-template-columns: 1fr;
   }
 
   .process-steps {
