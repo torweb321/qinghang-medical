@@ -15,17 +15,22 @@
     <div class="header-inner">
       <a href="/" class="logo">
         <span class="logo-icon">航</span>
-        启航国际医疗
+         <span data-i18n="hero_title">启航国际医疗</span>
       </a>
-      <button class="mobile-toggle" id="mobileToggle" aria-label="菜单">☰</button>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="菜单" data-i18n="mobile_menu">☰</button>
       <nav class="nav" id="nav">
-        <a href="index.html" class="active">首页</a>
-        <a href="about.html">关于我们</a>
-        <a href="services.html">服务项目</a>
-        <a href="hospitals.html">医疗机构</a>
-        <a href="blog.html">健康资讯</a>
-        <a href="faq.html">常见问题</a>
-        <a href="contact.html" class="nav-cta">免费咨询</a>
+        <a href="index.html" class="active"><span data-i18n="nav_home">首页</span></a>
+        <a href="about.html"><span data-i18n="nav_about">关于我们</span></a>
+        <a href="services.html"><span data-i18n="nav_services">服务项目</span></a>
+        <a href="hospitals.html"><span data-i18n="nav_hospitals">医疗机构</span></a>
+        <a href="blog.html"><span data-i18n="nav_blog">健康资讯</span></a>
+        <a href="faq.html"><span data-i18n="nav_faq">常见问题</span></a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav_cta">免费咨询</a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="zh-CN" onclick="i18n.switchTo('zh-CN')">简</button>
+          <button class="lang-btn" data-lang="zh-HK" onclick="i18n.switchTo('zh-HK')">繁</button>
+          <button class="lang-btn" data-lang="en" onclick="i18n.switchTo('en')">EN</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -34,44 +39,44 @@
     <div class="container">
       <div class="hero-grid">
         <div class="hero-content">
-          <h1>启航国际医疗</h1>
-          <div class="brand-en">Qihang International Medical</div>
-          <div class="tagline">香港体检 · 专科预约 · 第二诊疗意见</div>
-          <p class="subtitle">为中国客户提供香港及新加坡医疗资源咨询与跨境就医协调服务。<br>Connecting Patients to Trusted Healthcare in Hong Kong & Singapore.</p>
+          <h1 data-i18n="hero_title">启航国际医疗</h1>
+          <div class="brand-en" data-i18n="hero_brand">Qihang International Medical</div>
+          <div class="tagline" data-i18n="hero_tagline">香港体检 · 专科预约 · 第二诊疗意见</div>
+          <p class="subtitle" data-i18n="hero_subtitle">为中国客户提供香港及新加坡医疗资源咨询与跨境就医协调服务。<br>Connecting Patients to Trusted Healthcare in Hong Kong & Singapore.</p>
           <div class="hero-buttons">
-            <a href="contact.html" class="btn btn-primary">免费咨询</a>
-            <a href="https://wa.me/8618779374714" class="btn btn-whatsapp" target="_blank">WhatsApp 咨询</a>
-            <button class="btn btn-wechat" id="wechatBtn">微信咨询</button>
+            <a href="contact.html" class="btn btn-primary" data-i18n="hero_cta">免费咨询</a>
+            <a href="https://wa.me/8618779374714" class="btn btn-whatsapp" target="_blank" data-i18n="hero_whatsapp">WhatsApp 咨询</a>
+            <button class="btn btn-wechat" id="wechatBtn" data-i18n="hero_wechat">微信咨询</button>
           </div>
         </div>
         <div class="hero-visual">
           <div class="hero-card">
-            <h3>获取就医方案</h3>
+            <h3 data-i18n="hero_card_title">获取就医方案</h3>
             <form class="hero-card-form" id="heroForm">
-              <input type="text" name="name" placeholder="您的姓名" required>
-              <input type="tel" name="phone" placeholder="手机号码" required>
-              <input type="text" name="wechat" placeholder="微信号（选填）">
+              <input type="text" name="name" placeholder="您的姓名" data-i18n="hero_name_placeholder" required>
+              <input type="tel" name="phone" placeholder="手机号码" data-i18n="hero_phone_placeholder" required>
+              <input type="text" name="wechat" placeholder="微信号（选填）" data-i18n="hero_wechat_placeholder">
               <select name="service" required>
-                <option value="">咨询项目</option>
-                <option value="checkup">体检服务</option>
-                <option value="specialist">专科预约</option>
-                <option value="second-opinion">第二诊疗意见</option>
-                <option value="referral">重症转诊</option>
-                <option value="other">其他</option>
+                <option value="" data-i18n="hero_service_label">咨询项目</option>
+                <option value="checkup" data-i18n="hero_service_item1">体检服务</option>
+                <option value="specialist" data-i18n="hero_service_item2">专科预约</option>
+                <option value="second-opinion" data-i18n="hero_service_item3">第二诊疗意见</option>
+                <option value="referral" data-i18n="hero_service_item4">重症转诊</option>
+                <option value="other" data-i18n="hero_service_item5">其他</option>
               </select>
               <select name="destination" required>
-                <option value="">意向目的地</option>
-                <option value="hk">香港</option>
-                <option value="sg">新加坡</option>
-                <option value="jp">日本</option>
-                <option value="other">其他</option>
+                <option value="" data-i18n="hero_dest_label">意向目的地</option>
+                <option value="hk" data-i18n="hero_dest_item1">香港</option>
+                <option value="sg" data-i18n="hero_dest_item2">新加坡</option>
+                <option value="jp" data-i18n="hero_dest_item3">日本</option>
+                <option value="other" data-i18n="hero_dest_item4">其他</option>
               </select>
-              <button type="submit" class="btn btn-primary">提交咨询</button>
+              <button type="submit" class="btn btn-primary" data-i18n="hero_submit">提交咨询</button>
             </form>
             <div class="form-success" id="heroFormSuccess">
               <div class="success-icon">✓</div>
-              <h3>提交成功</h3>
-              <p>我们将在24小时内与您联系</p>
+              <h3 data-i18n="hero_success_title">提交成功</h3>
+              <p data-i18n="hero_success_text">我们将在24小时内与您联系</p>
               <div style="margin-top:20px;font-size:0.85rem">
                 <a href="blog/hk-vs-mainland-checkup.html" style="color:var(--primary)">→ 了解更多香港体检信息</a>
               </div>
@@ -87,23 +92,23 @@
       <div class="advantages-grid">
         <div class="advantage-item">
           <div class="advantage-icon">🌐</div>
-          <h3>香港 · 新加坡双地覆盖</h3>
-          <p>与香港及新加坡多家顶尖私立医疗机构建立合作网络，为客户精准匹配最优医疗资源</p>
+          <h3 data-i18n="adv_1_title">香港 · 新加坡双地覆盖</h3>
+          <p data-i18n="adv_1_desc">与香港及新加坡多家顶尖私立医疗机构建立合作网络，为客户精准匹配最优医疗资源</p>
         </div>
         <div class="advantage-item">
           <div class="advantage-icon">🤝</div>
-          <h3>全流程协调服务</h3>
-          <p>从病历整理翻译、专家预约、赴港陪诊到术后随访，提供一站式跨境就医管理</p>
+          <h3 data-i18n="adv_2_title">全流程协调服务</h3>
+          <p data-i18n="adv_2_desc">从病历整理翻译、专家预约、赴港陪诊到术后随访，提供一站式跨境就医管理</p>
         </div>
         <div class="advantage-item">
           <div class="advantage-icon">🇨🇳</div>
-          <h3>中文母语无缝对接</h3>
-          <p>全程中文沟通，专业医学翻译，消除跨境就医的语言障碍，让每一步都安心</p>
+          <h3 data-i18n="adv_3_title">中文母语无缝对接</h3>
+          <p data-i18n="adv_3_desc">全程中文沟通，专业医学翻译，消除跨境就医的语言障碍，让每一步都安心</p>
         </div>
         <div class="advantage-item">
           <div class="advantage-icon">🔒</div>
-          <h3>严格隐私保护</h3>
-          <p>严格遵守香港《个人资料（隐私）条例》与新加坡《个人数据保护法》，全程保密</p>
+          <h3 data-i18n="adv_4_title">严格隐私保护</h3>
+          <p data-i18n="adv_4_desc">严格遵守香港《个人资料（隐私）条例》与新加坡《个人数据保护法》，全程保密</p>
         </div>
       </div>
     </div>
@@ -112,27 +117,27 @@
   <section class="section" id="services">
     <div class="container">
       <div class="section-header">
-        <h2>核心服务</h2>
-        <p>覆盖香港新加坡两地，提供从体检到转诊的全流程医疗协调服务</p>
+        <h2 data-i18n="services_title">核心服务</h2>
+        <p data-i18n="services_desc">覆盖香港新加坡两地，提供从体检到转诊的全流程医疗协调服务</p>
       </div>
       <div class="services-grid">
         <div class="service-card">
           <div class="service-icon">🏥</div>
-          <h3>香港体检</h3>
-          <div class="service-en">Health Check</div>
-          <p>高端体检 · 癌症筛查 · PET-CT · 年度健康管理</p>
+          <h3 data-i18n="service_1_title">香港体检</h3>
+          <div class="service-en" data-i18n="service_1_en">Health Check</div>
+          <p data-i18n="service_1_desc">高端体检 · 癌症筛查 · PET-CT · 年度健康管理</p>
         </div>
         <div class="service-card">
           <div class="service-icon">👨‍⚕️</div>
-          <h3>专科预约</h3>
-          <div class="service-en">Specialist Appointment</div>
-          <p>肿瘤科 · 心脏科 · 妇科 · 神经科，香港顶级私立医院快速预约</p>
+          <h3 data-i18n="service_2_title">专科预约</h3>
+          <div class="service-en" data-i18n="service_2_en">Specialist Appointment</div>
+          <p data-i18n="service_2_desc">肿瘤科 · 心脏科 · 妇科 · 神经科，香港顶级私立医院快速预约</p>
         </div>
         <div class="service-card">
           <div class="service-icon">🌏</div>
-          <h3>第二诊疗意见</h3>
-          <div class="service-en">Second Opinion</div>
-          <p>香港与新加坡专家团队 · 病历评估 · 权威报告出具</p>
+          <h3 data-i18n="service_3_title">第二诊疗意见</h3>
+          <div class="service-en" data-i18n="service_3_en">Second Opinion</div>
+          <p data-i18n="service_3_desc">香港与新加坡专家团队 · 病历评估 · 权威报告出具</p>
         </div>
       </div>
     </div>
@@ -141,37 +146,37 @@
   <section class="section section-alt" id="process">
     <div class="container">
       <div class="section-header">
-        <h2>服务流程</h2>
-        <p>简单七步，让跨境就医全程无忧</p>
+        <h2 data-i18n="process_title">服务流程</h2>
+        <p data-i18n="process_desc">简单七步，让跨境就医全程无忧</p>
       </div>
       <div class="process-steps">
         <div class="process-step">
-          <h4>在线咨询</h4>
-          <p>提交您的需求</p>
+          <h4 data-i18n="process_1_title">在线咨询</h4>
+          <p data-i18n="process_1_desc">提交您的需求</p>
         </div>
         <div class="process-step">
-          <h4>需求评估</h4>
-          <p>专业顾问对接</p>
+          <h4 data-i18n="process_2_title">需求评估</h4>
+          <p data-i18n="process_2_desc">专业顾问对接</p>
         </div>
         <div class="process-step">
-          <h4>病历整理</h4>
-          <p>翻译与归档</p>
+          <h4 data-i18n="process_3_title">病历整理</h4>
+          <p data-i18n="process_3_desc">翻译与归档</p>
         </div>
         <div class="process-step">
-          <h4>机构匹配</h4>
-          <p>推荐最适合的医院</p>
+          <h4 data-i18n="process_4_title">机构匹配</h4>
+          <p data-i18n="process_4_desc">推荐最适合的医院</p>
         </div>
         <div class="process-step">
-          <h4>预约确认</h4>
-          <p>锁定医生时间</p>
+          <h4 data-i18n="process_5_title">预约确认</h4>
+          <p data-i18n="process_5_desc">锁定医生时间</p>
         </div>
         <div class="process-step">
-          <h4>赴港就医</h4>
-          <p>全程协调陪同</p>
+          <h4 data-i18n="process_6_title">赴港就医</h4>
+          <p data-i18n="process_6_desc">全程协调陪同</p>
         </div>
         <div class="process-step">
-          <h4>后续跟进</h4>
-          <p>康复管理与回访</p>
+          <h4 data-i18n="process_7_title">后续跟进</h4>
+          <p data-i18n="process_7_desc">康复管理与回访</p>
         </div>
       </div>
     </div>
@@ -180,27 +185,27 @@
   <section class="section section-alt" id="cases">
     <div class="container">
       <div class="section-header">
-        <h2>服务案例</h2>
-        <p>匿名展示真实服务案例，帮助您了解跨境医疗的实际流程与价值</p>
+        <h2 data-i18n="cases_title">服务案例</h2>
+        <p data-i18n="cases_desc">匿名展示真实服务案例，帮助您了解跨境医疗的实际流程与价值</p>
       </div>
       <div class="cases-grid">
         <div class="case-card">
-          <div class="case-tag">肿瘤科</div>
-          <h3>肺癌 · 香港第二诊疗意见</h3>
-          <p>55岁男性确诊非小细胞肺癌，当地治疗方案不确定。我们整理翻译全套病历后提交至香港肿瘤科专家团队。专家出具详细第二诊疗意见报告，建议靶向治疗联合免疫方案，并推荐临床试验选择。患者赴港接受治疗，3个月后肿瘤显著缩小。</p>
-          <div class="case-meta">香港 · 肿瘤科 · 第二诊疗意见 → 赴港治疗</div>
+          <div class="case-tag" data-i18n="case_1_tag">肿瘤科</div>
+          <h3 data-i18n="case_1_title">肺癌 · 香港第二诊疗意见</h3>
+          <p data-i18n="case_1_desc">55岁男性确诊非小细胞肺癌，当地治疗方案不确定。我们整理翻译全套病历后提交至香港肿瘤科专家团队。专家出具详细第二诊疗意见报告，建议靶向治疗联合免疫方案，并推荐临床试验选择。患者赴港接受治疗，3个月后肿瘤显著缩小。</p>
+          <div class="case-meta" data-i18n="case_1_meta">香港 · 肿瘤科 · 第二诊疗意见 → 赴港治疗</div>
         </div>
         <div class="case-card">
-          <div class="case-tag">高端体检</div>
-          <h3>年度体检 · 早期发现甲状腺癌</h3>
-          <p>42岁女性赴港进行年度高端体检，PET-CT发现甲状腺微小病灶。放射科专家立即建议穿刺活检，确诊为早期甲状腺乳头状癌。患者在香港接受微创手术，术后恢复良好。因发现及时，避免了病情恶化及更激进的治疗方案。</p>
-          <div class="case-meta">香港 · 高端体检 · 早期筛查 → 微创手术</div>
+          <div class="case-tag" data-i18n="case_2_tag">高端体检</div>
+          <h3 data-i18n="case_2_title">年度体检 · 早期发现甲状腺癌</h3>
+          <p data-i18n="case_2_desc">42岁女性赴港进行年度高端体检，PET-CT发现甲状腺微小病灶。放射科专家立即建议穿刺活检，确诊为早期甲状腺乳头状癌。患者在香港接受微创手术，术后恢复良好。因发现及时，避免了病情恶化及更激进的治疗方案。</p>
+          <div class="case-meta" data-i18n="case_2_meta">香港 · 高端体检 · 早期筛查 → 微创手术</div>
         </div>
         <div class="case-card">
-          <div class="case-tag">心脏科</div>
-          <h3>瓣膜置换 · 新加坡专家远程会诊</h3>
-          <p>60岁男性重度主动脉瓣狭窄，期待微创方案。我们为其对接新加坡国家心脏中心专家进行远程会诊，评估后建议经导管主动脉瓣置换术（TAVI）。患者赴新加坡顺利完成手术，第5天出院，生活质量显著改善。</p>
-          <div class="case-meta">新加坡 · 心脏科 · 远程会诊 → 赴新手术</div>
+          <div class="case-tag" data-i18n="case_3_tag">心脏科</div>
+          <h3 data-i18n="case_3_title">瓣膜置换 · 新加坡专家远程会诊</h3>
+          <p data-i18n="case_3_desc">60岁男性重度主动脉瓣狭窄，期待微创方案。我们为其对接新加坡国家心脏中心专家进行远程会诊，评估后建议经导管主动脉瓣置换术（TAVI）。患者赴新加坡顺利完成手术，第5天出院，生活质量显著改善。</p>
+          <div class="case-meta" data-i18n="case_3_meta">新加坡 · 心脏科 · 远程会诊 → 赴新手术</div>
         </div>
       </div>
     </div>
@@ -209,15 +214,15 @@
   <section class="section" id="hospitals">
     <div class="container">
       <div class="section-header">
-        <h2>香港及新加坡医疗资源</h2>
-        <p>我们专注对接香港及新加坡的优质医疗机构，涵盖高端体检、专科诊疗及重症转诊</p>
+        <h2 data-i18n="hospitals_title">香港及新加坡医疗资源</h2>
+        <p data-i18n="hospitals_desc">我们专注对接香港及新加坡的优质医疗机构，涵盖高端体检、专科诊疗及重症转诊</p>
       </div>
       <div class="hospitals-grid">
         <div class="hospital-card">
-          <span class="hospital-location">香港</span>
-          <h3>教学医院 · 高端体检</h3>
-          <p>香港多所大学附属教学医院配备先进的医疗设备和电子病历系统，提供高端体检、癌症筛查及PET-CT等服务，以循证医学为宗旨，服务国际患者经验丰富。</p>
-          <div class="tags">
+          <span class="hospital-location" data-i18n="hk_type1_location">香港</span>
+          <h3 data-i18n="hk_type1_title">教学医院 · 高端体检</h3>
+          <p data-i18n="hk_type1_desc">香港多所大学附属教学医院配备先进的医疗设备和电子病历系统，提供高端体检、癌症筛查及PET-CT等服务，以循证医学为宗旨，服务国际患者经验丰富。</p>
+          <div class="tags" data-i18n="hk_type1_tags">
             <span class="tag">高端体检</span>
             <span class="tag">癌症筛查</span>
             <span class="tag">PET-CT</span>
@@ -225,10 +230,10 @@
           </div>
         </div>
         <div class="hospital-card">
-          <span class="hospital-location">香港</span>
-          <h3>国际医疗集团 · 综合专科</h3>
-          <p>IHH及同类国际医疗集团旗下香港医院，拥有多专科中心和超500张床位，癌症中心、心脏科及骨科处于领先地位，设有专门的国际患者服务部门。</p>
-          <div class="tags">
+          <span class="hospital-location" data-i18n="hk_type2_location">香港</span>
+          <h3 data-i18n="hk_type2_title">国际医疗集团 · 综合专科</h3>
+          <p data-i18n="hk_type2_desc">IHH及同类国际医疗集团旗下香港医院，拥有多专科中心和超500张床位，癌症中心、心脏科及骨科处于领先地位，设有专门的国际患者服务部门。</p>
+          <div class="tags" data-i18n="hk_type2_tags">
             <span class="tag">综合专科</span>
             <span class="tag">癌症中心</span>
             <span class="tag">心脏科</span>
@@ -236,10 +241,10 @@
           </div>
         </div>
         <div class="hospital-card">
-          <span class="hospital-location">香港</span>
-          <h3>专科优势 · 全人医疗</h3>
-          <p>香港多间以专科见长的私立医院，在肿瘤科、心脏科、骨科及全人健康管理领域有超50年服务历史，注重患者隐私与个性化护理，环境舒适。</p>
-          <div class="tags">
+          <span class="hospital-location" data-i18n="hk_type3_location">香港</span>
+          <h3 data-i18n="hk_type3_title">专科优势 · 全人医疗</h3>
+          <p data-i18n="hk_type3_desc">香港多间以专科见长的私立医院，在肿瘤科、心脏科、骨科及全人健康管理领域有超50年服务历史，注重患者隐私与个性化护理，环境舒适。</p>
+          <div class="tags" data-i18n="hk_type3_tags">
             <span class="tag">肿瘤科</span>
             <span class="tag">心脏科</span>
             <span class="tag">健康管理</span>
@@ -247,10 +252,10 @@
           </div>
         </div>
         <div class="hospital-card">
-          <span class="hospital-location">新加坡</span>
-          <h3>国际顶级 · 重症转诊</h3>
-          <p>新加坡多间顶级私立医院在肿瘤科、心脏科、神经科及器官移植等领域享有国际声誉，拥有先进医疗技术和多学科专家团队，是亚洲医疗旅游的首选目的地之一。</p>
-          <div class="tags">
+          <span class="hospital-location" data-i18n="hk_type4_location">新加坡</span>
+          <h3 data-i18n="hk_type4_title">国际顶级 · 重症转诊</h3>
+          <p data-i18n="hk_type4_desc">新加坡多间顶级私立医院在肿瘤科、心脏科、神经科及器官移植等领域享有国际声誉，拥有先进医疗技术和多学科专家团队，是亚洲医疗旅游的首选目的地之一。</p>
+          <div class="tags" data-i18n="hk_type4_tags">
             <span class="tag">重症转诊</span>
             <span class="tag">第二诊疗意见</span>
             <span class="tag">肿瘤科</span>
@@ -263,9 +268,9 @@
 
   <section class="cta-section">
     <div class="container">
-      <h2>开启您的跨境医疗之旅</h2>
-      <p>专业顾问为您提供一对一的就医评估与方案定制</p>
-      <a href="contact.html" class="btn">立即免费咨询</a>
+      <h2 data-i18n="cta_title">开启您的跨境医疗之旅</h2>
+      <p data-i18n="cta_desc">专业顾问为您提供一对一的就医评估与方案定制</p>
+      <a href="contact.html" class="btn" data-i18n="cta_btn">立即免费咨询</a>
     </div>
   </section>
 
@@ -273,38 +278,38 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h3>启航国际医疗</h3>
-          <p>致力于为中国客户提供香港及新加坡国际医疗资源咨询与跨境就医协调服务。专业、透明、高效、隐私保护。</p>
+          <h3 data-i18n="footer_title">启航国际医疗</h3>
+          <p data-i18n="footer_desc">致力于为中国客户提供香港及新加坡国际医疗资源咨询与跨境就医协调服务。专业、透明、高效、隐私保护。</p>
         </div>
         <div>
-          <h3>快速链接</h3>
+          <h3 data-i18n="footer_quick">快速链接</h3>
           <ul class="footer-links">
-            <li><a href="about.html">关于我们</a></li>
-            <li><a href="services.html">服务项目</a></li>
-            <li><a href="hospitals.html">医疗机构</a></li>
-            <li><a href="faq.html">常见问题</a></li>
+            <li><a href="about.html"><span data-i18n="nav_about">关于我们</span></a></li>
+            <li><a href="services.html"><span data-i18n="nav_services">服务项目</span></a></li>
+            <li><a href="hospitals.html"><span data-i18n="nav_hospitals">医疗机构</span></a></li>
+            <li><a href="faq.html"><span data-i18n="nav_faq">常见问题</span></a></li>
           </ul>
         </div>
         <div>
-          <h3>服务项目</h3>
+          <h3 data-i18n="footer_services_title">服务项目</h3>
           <ul class="footer-links">
-            <li><a href="services.html#hk-checkup">香港体检</a></li>
-            <li><a href="services.html#specialist">专科预约</a></li>
-            <li><a href="services.html#second-opinion">第二诊疗意见</a></li>
-            <li><a href="services.html#singapore">新加坡转诊</a></li>
+            <li><a href="services.html#hk-checkup"><span data-i18n="service_1_title">香港体检</span></a></li>
+            <li><a href="services.html#specialist"><span data-i18n="service_2_title">专科预约</span></a></li>
+            <li><a href="services.html#second-opinion"><span data-i18n="service_3_title">第二诊疗意见</span></a></li>
+            <li><a href="services.html#singapore"><span data-i18n="sg_transfer_title">新加坡转诊</span></a></li>
           </ul>
         </div>
         <div>
-          <h3>联系我们</h3>
+          <h3 data-i18n="footer_contact_title">联系我们</h3>
           <div class="footer-contact">
-            <p>微信：QihangMedical</p>
-            <p>WhatsApp：<a href="https://wa.me/8618779374714" style="color:#94a3b8">点击直接对话</a></p>
-            <p>邮箱：qihangmedical@outlook.com</p>
+            <p data-i18n="contact_wechat">微信：QihangMedical</p>
+            <p>WhatsApp：<a href="https://wa.me/8618779374714" style="color:#94a3b8"><span data-i18n="footer_whatsapp">点击直接对话</span></a></p>
+            <p data-i18n="contact_email">邮箱：qihangmedical@outlook.com</p>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 启航国际医疗 · Qihang Enterprise Consulting Service Co., Ltd. All rights reserved.</p>
+        <small data-i18n="footer_copyright">&copy; 2025 启航国际医疗 · Qihang Enterprise Consulting Service Co., Ltd. All rights reserved.</small>
       </div>
     </div>
   </footer>
@@ -312,12 +317,15 @@
   <div class="modal-overlay" id="wechatModal">
     <div class="modal">
       <button class="modal-close" id="wechatModalClose">&times;</button>
-      <h3>微信咨询</h3>
+      <h3 data-i18n="contact_wechat_modal_title">微信咨询</h3>
       <img src="images/wechat-qr.jpg" alt="微信二维码" style="width:200px;height:auto;border-radius:12px;margin:12px auto;display:block;box-shadow:0 2px 8px rgba(0,0,0,0.1)">
-      <p>或者扫描下方二维码添加微信<br>获取一对一的专业咨询</p>
+      <p data-i18n="contact_wechat_modal_text">或者扫描下方二维码添加微信<br>获取一对一的专业咨询</p>
     </div>
   </div>
 
+  <script src="js/i18n.js"></script>
+  <script src="js/i18n/en.js"></script>
+  <script src="js/i18n/zh-hk.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

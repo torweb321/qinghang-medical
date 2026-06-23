@@ -19,29 +19,34 @@
       </a>
       <button class="mobile-toggle" id="mobileToggle" aria-label="菜单">☰</button>
       <nav class="nav" id="nav">
-        <a href="index.html">首页</a>
-        <a href="about.html">关于我们</a>
-        <a href="services.html" class="active">服务项目</a>
-        <a href="hospitals.html">医疗机构</a>
-        <a href="blog.html">健康资讯</a>
-        <a href="faq.html">常见问题</a>
-        <a href="contact.html" class="nav-cta">免费咨询</a>
+        <a href="index.html"><span data-i18n="nav_home">首页</span></a>
+        <a href="about.html"><span data-i18n="nav_about">关于我们</span></a>
+        <a href="services.html" class="active"><span data-i18n="nav_services">服务项目</span></a>
+        <a href="hospitals.html"><span data-i18n="nav_hospitals">医疗机构</span></a>
+        <a href="blog.html"><span data-i18n="nav_blog">健康资讯</span></a>
+        <a href="faq.html"><span data-i18n="nav_faq">常见问题</span></a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav_cta">免费咨询</a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="zh-CN" onclick="i18n.switchTo('zh-CN')">简</button>
+          <button class="lang-btn" data-lang="zh-HK" onclick="i18n.switchTo('zh-HK')">繁</button>
+          <button class="lang-btn" data-lang="en" onclick="i18n.switchTo('en')">EN</button>
+        </div>
       </nav>
     </div>
   </header>
 
   <div class="page-header">
     <div class="container">
-      <h1>服务项目</h1>
-      <p>覆盖香港新加坡，从体检到重症转诊的全方位医疗协调服务</p>
+      <h1 data-i18n="services_header_title">服务项目</h1>
+      <p data-i18n="services_header_desc">覆盖香港新加坡，从体检到重症转诊的全方位医疗协调服务</p>
     </div>
   </div>
 
   <section class="section" id="hk-checkup">
     <div class="container">
       <div class="service-detail-card full-width">
-        <h3>🏥 香港体检</h3>
-        <p>启航国际医疗为您安排香港顶级私立医院的高端体检服务。香港体检以检查项目全面、报告解读专业、服务环境舒适著称，已成为内地客户年度健康管理的首选。</p>
+        <h3 data-i18n="hk_checkup_title">🏥 香港体检</h3>
+        <p data-i18n="hk_checkup_desc">启航国际医疗为您安排香港顶级私立医院的高端体检服务。香港体检以检查项目全面、报告解读专业、服务环境舒适著称，已成为内地客户年度健康管理的首选。</p>
         <div class="service-detail-grid">
           <div>
             <h4>体检项目</h4>
@@ -73,8 +78,8 @@
   <section class="section section-alt" id="specialist">
     <div class="container">
       <div class="service-detail-card full-width">
-        <h3>👨‍⚕️ 专科预约</h3>
-        <p>快速对接香港顶尖私立医院的专科医生，涵盖主要专科领域。我们了解每位专家的专长领域与排期情况，为客户精准匹配最适合的专科医生。</p>
+        <h3 data-i18n="specialist_title">👨‍⚕️ 专科预约</h3>
+        <p data-i18n="specialist_desc">快速对接香港顶尖私立医院的专科医生，涵盖主要专科领域。我们了解每位专家的专长领域与排期情况，为客户精准匹配最适合的专科医生。</p>
         <div class="service-detail-grid">
           <div>
             <h4>覆盖科室</h4>
@@ -106,8 +111,8 @@
   <section class="section" id="second-opinion">
     <div class="container">
       <div class="service-detail-card full-width">
-        <h3>🌏 第二诊疗意见</h3>
-        <p>当面对重大疾病诊断或治疗方案不确定时，香港及新加坡顶级专家的第二诊疗意见可以为您提供更多决策依据。我们的专家团队覆盖肿瘤、心脏、神经等多个专科领域。</p>
+        <h3 data-i18n="second_opinion_title">🌏 第二诊疗意见</h3>
+        <p data-i18n="second_opinion_desc">当面对重大疾病诊断或治疗方案不确定时，香港及新加坡顶级专家的第二诊疗意见可以为您提供更多决策依据。我们的专家团队覆盖肿瘤、心脏、神经等多个专科领域。</p>
         <div class="service-detail-grid">
           <div>
             <h4>服务流程</h4>
@@ -139,8 +144,8 @@
   <section class="section section-alt" id="singapore">
     <div class="container">
       <div class="service-detail-card full-width">
-        <h3>🇸🇬 新加坡转诊</h3>
-        <p>新加坡以世界级的医疗体系、高效的医疗服务、先进的治疗技术吸引全球患者。我们协助客户对接新加坡顶级医院，安排专家会诊与重症转诊。</p>
+        <h3 data-i18n="sg_transfer_title">🇸🇬 新加坡转诊</h3>
+        <p data-i18n="sg_transfer_desc">新加坡以世界级的医疗体系、高效的医疗服务、先进的治疗技术吸引全球患者。我们协助客户对接新加坡顶级医院，安排专家会诊与重症转诊。</p>
         <div class="service-detail-grid">
           <div>
             <h4>转诊服务</h4>
@@ -170,22 +175,22 @@
   <section class="section" id="value-added">
     <div class="container">
       <div class="service-detail-card full-width">
-        <h3>📋 增值服务</h3>
+        <h3 data-i18n="value_added_title">📋 增值服务</h3>
         <div class="service-detail-grid">
           <div>
-            <h4>病历整理</h4>
+            <h4 data-i18n="value_added_1_title">病历整理</h4>
             <p>系统整理过往病历资料，按国际标准格式化归档，确保医生快速了解病情全貌。</p>
           </div>
           <div>
-            <h4>医学翻译</h4>
+            <h4 data-i18n="value_added_2_title">医学翻译</h4>
             <p>专业医学翻译团队，确保病历、报告、诊断结果在中英文之间的精准转换。</p>
           </div>
           <div>
-            <h4>就医协调</h4>
+            <h4 data-i18n="value_added_3_title">就医协调</h4>
             <p>从预约到就诊全程协调，包括交通、住宿、签证等跨境就医相关事务安排。</p>
           </div>
           <div>
-            <h4>健康管理</h4>
+            <h4 data-i18n="value_added_4_title">健康管理</h4>
             <p>建立个人健康档案，定期随访，提供持续的康复管理与健康咨询服务。</p>
           </div>
         </div>
@@ -195,9 +200,9 @@
 
   <section class="cta-section">
     <div class="container">
-      <h2>需要了解更多服务详情？</h2>
-      <p>联系我们获取个性化的医疗咨询方案</p>
-      <a href="contact.html" class="btn">立即咨询</a>
+      <h2 data-i18n="services_cta_title">需要了解更多服务详情？</h2>
+      <p data-i18n="services_cta_desc">联系我们获取个性化的医疗咨询方案</p>
+      <a href="contact.html" class="btn" data-i18n="services_cta_btn">立即咨询</a>
     </div>
   </section>
 
@@ -205,38 +210,38 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h3>启航国际医疗</h3>
-          <p>致力于为中国客户提供香港及新加坡国际医疗资源咨询与跨境就医协调服务。专业、透明、高效、隐私保护。</p>
+          <h3 data-i18n="footer_title">启航国际医疗</h3>
+          <p data-i18n="footer_desc">致力于为中国客户提供香港及新加坡国际医疗资源咨询与跨境就医协调服务。专业、透明、高效、隐私保护。</p>
         </div>
         <div>
-          <h3>快速链接</h3>
+          <h3 data-i18n="footer_quick">快速链接</h3>
           <ul class="footer-links">
-            <li><a href="about.html">关于我们</a></li>
-            <li><a href="services.html">服务项目</a></li>
-            <li><a href="hospitals.html">医疗机构</a></li>
-            <li><a href="faq.html">常见问题</a></li>
+            <li><a href="about.html"><span data-i18n="nav_about">关于我们</span></a></li>
+            <li><a href="services.html"><span data-i18n="nav_services">服务项目</span></a></li>
+            <li><a href="hospitals.html"><span data-i18n="nav_hospitals">医疗机构</span></a></li>
+            <li><a href="faq.html"><span data-i18n="nav_faq">常见问题</span></a></li>
           </ul>
         </div>
         <div>
-          <h3>服务项目</h3>
+          <h3 data-i18n="footer_services_title">服务项目</h3>
           <ul class="footer-links">
-            <li><a href="services.html#hk-checkup">香港体检</a></li>
-            <li><a href="services.html#specialist">专科预约</a></li>
-            <li><a href="services.html#second-opinion">第二诊疗意见</a></li>
-            <li><a href="services.html#singapore">新加坡转诊</a></li>
+            <li><a href="services.html#hk-checkup"><span data-i18n="service_1_title">香港体检</span></a></li>
+            <li><a href="services.html#specialist"><span data-i18n="service_2_title">专科预约</span></a></li>
+            <li><a href="services.html#second-opinion"><span data-i18n="service_3_title">第二诊疗意见</span></a></li>
+            <li><a href="services.html#singapore"><span data-i18n="sg_transfer_title">新加坡转诊</span></a></li>
           </ul>
         </div>
         <div>
-          <h3>联系我们</h3>
+          <h3 data-i18n="footer_contact_title">联系我们</h3>
           <div class="footer-contact">
-            <p>微信：QihangMedical</p>
-            <p>WhatsApp：<a href="https://wa.me/8618779374714" style="color:#94a3b8">点击直接对话</a></p>
-            <p>邮箱：qihangmedical@outlook.com</p>
+            <p data-i18n="contact_wechat">微信：QihangMedical</p>
+            <p>WhatsApp：<a href="https://wa.me/8618779374714" style="color:#94a3b8"><span data-i18n="footer_whatsapp">点击直接对话</span></a></p>
+            <p data-i18n="contact_email">邮箱：qihangmedical@outlook.com</p>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 启航国际医疗 · Qihang Enterprise Consulting Service Co., Ltd. All rights reserved.</p>
+        <small data-i18n="footer_copyright">&copy; 2025 启航国际医疗 · Qihang Enterprise Consulting Service Co., Ltd. All rights reserved.</small>
       </div>
     </div>
   </footer>
@@ -250,6 +255,9 @@
     </div>
   </div>
 
+  <script src="js/i18n.js"></script>
+  <script src="js/i18n/en.js"></script>
+  <script src="js/i18n/zh-hk.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

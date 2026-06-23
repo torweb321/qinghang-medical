@@ -19,21 +19,26 @@
       </a>
       <button class="mobile-toggle" id="mobileToggle" aria-label="菜单">☰</button>
       <nav class="nav" id="nav">
-        <a href="index.html">首页</a>
-        <a href="about.html">关于我们</a>
-        <a href="services.html">服务项目</a>
-        <a href="hospitals.html">医疗机构</a>
-        <a href="blog.html">健康资讯</a>
-        <a href="faq.html">常见问题</a>
-        <a href="contact.html" class="nav-cta">免费咨询</a>
+        <a href="index.html"><span data-i18n="nav_home">首页</span></a>
+        <a href="about.html"><span data-i18n="nav_about">关于我们</span></a>
+        <a href="services.html"><span data-i18n="nav_services">服务项目</span></a>
+        <a href="hospitals.html"><span data-i18n="nav_hospitals">医疗机构</span></a>
+        <a href="blog.html"><span data-i18n="nav_blog">健康资讯</span></a>
+        <a href="faq.html"><span data-i18n="nav_faq">常见问题</span></a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav_cta">免费咨询</a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="zh-CN" onclick="i18n.switchTo('zh-CN')">简</button>
+          <button class="lang-btn" data-lang="zh-HK" onclick="i18n.switchTo('zh-HK')">繁</button>
+          <button class="lang-btn" data-lang="en" onclick="i18n.switchTo('en')">EN</button>
+        </div>
       </nav>
     </div>
   </header>
 
   <div class="page-header">
     <div class="container">
-      <h1>联系我们</h1>
-      <p>开启您的跨境医疗咨询之旅</p>
+      <h1 data-i18n="contact_header_title">联系我们</h1>
+      <p data-i18n="contact_header_desc">开启您的跨境医疗咨询之旅</p>
     </div>
   </div>
 
@@ -41,63 +46,63 @@
     <div class="container">
       <div class="contact-grid">
         <div class="contact-info">
-          <h3>我们在这里为您服务</h3>
-          <p>无论是香港体检、专科预约、第二诊疗意见还是新加坡转诊，我们的专业顾问将为您提供一对一的评估与建议。</p>
+          <h3 data-i18n="contact_info_title">我们在这里为您服务</h3>
+          <p data-i18n="contact_info_desc">无论是香港体检、专科预约、第二诊疗意见还是新加坡转诊，我们的专业顾问将为您提供一对一的评估与建议。</p>
 
           <div class="contact-methods">
-            <div class="contact-method">
+              <div class="contact-method">
               <div class="contact-method-icon">💬</div>
               <div>
-                <h4>微信</h4>
-                <p>QihangMedical</p>
+                <h4 data-i18n="contact_wechat_label">微信</h4>
+                <p data-i18n="contact_wechat_val">QihangMedical</p>
               </div>
             </div>
             <div class="contact-method">
               <div class="contact-method-icon">📱</div>
               <div>
                 <h4>WhatsApp</h4>
-                <p><a href="https://wa.me/8618779374714" style="color:var(--primary)">点击直接对话</a></p>
+                <p><a href="https://wa.me/8618779374714" style="color:var(--primary)"><span data-i18n="footer_whatsapp">点击直接对话</span></a></p>
               </div>
             </div>
             <div class="contact-method">
               <div class="contact-method-icon">📧</div>
               <div>
-                <h4>电子邮箱</h4>
-                <p>qihangmedical@outlook.com</p>
+                <h4 data-i18n="contact_email_label">电子邮箱</h4>
+                <p data-i18n="contact_email_val">qihangmedical@outlook.com</p>
               </div>
             </div>
             <div class="contact-method">
               <div class="contact-method-icon">⏰</div>
               <div>
-                <h4>服务时间</h4>
-                <p>周一至周五 9:00-18:00，周六 9:00-13:00（香港时间）</p>
+                <h4 data-i18n="contact_hours_label">服务时间</h4>
+                <p data-i18n="contact_hours">周一至周五 9:00-18:00，周六 9:00-13:00（香港时间）</p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="contact-form-wrap">
-          <h3>免费咨询 · 获取就医方案</h3>
+          <h3 data-i18n="contact_form_title">免费咨询 · 获取就医方案</h3>
           <form id="contactForm">
             <div class="form-group">
-              <label for="name">姓名 *</label>
-              <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+              <label for="name" data-i18n="contact_name_label">姓名 *</label>
+              <input type="text" id="name" name="name" required placeholder="请输入您的姓名" data-i18n="contact_name_placeholder">
             </div>
             <div class="form-group">
-              <label>性别</label>
+              <label data-i18n="contact_gender_label">性别</label>
               <div class="radio-group">
-                <label><input type="radio" name="gender" value="male"> 男</label>
-                <label><input type="radio" name="gender" value="female"> 女</label>
+                <label data-i18n="contact_male"><input type="radio" name="gender" value="male"> 男</label>
+                <label data-i18n="contact_female"><input type="radio" name="gender" value="female"> 女</label>
               </div>
             </div>
             <div class="form-group">
-              <label for="age">年龄</label>
-              <input type="number" id="age" name="age" placeholder="请输入年龄">
+              <label for="age" data-i18n="contact_age_label">年龄</label>
+              <input type="number" id="age" name="age" placeholder="请输入年龄" data-i18n="contact_age_placeholder">
             </div>
             <div class="form-group">
-              <label for="city">所在城市</label>
+              <label for="city" data-i18n="contact_city_label">所在城市</label>
               <div class="datalist-input">
-                <input type="text" id="city" name="city" list="cityList" placeholder="输入城市，如北京、上海、纽约...">
+                <input type="text" id="city" name="city" list="cityList" placeholder="输入城市，如北京、上海、纽约..." data-i18n="contact_city_placeholder">
                 <datalist id="cityList">
                   <option value="北京"><option value="上海"><option value="广州"><option value="深圳">
                   <option value="成都"><option value="杭州"><option value="武汉"><option value="南京">
@@ -113,7 +118,7 @@
               </div>
             </div>
             <div class="form-group">
-              <label>咨询项目 *</label>
+              <label data-i18n="contact_service_label">咨询项目 *</label>
               <div class="checkbox-group">
                 <label><input type="checkbox" name="service" value="checkup"> 体检服务</label>
                 <label><input type="checkbox" name="service" value="specialist"> 专科预约</label>
@@ -123,7 +128,7 @@
               </div>
             </div>
             <div class="form-group">
-              <label>意向目的地</label>
+              <label data-i18n="contact_dest_label">意向目的地</label>
               <div class="radio-group">
                 <label><input type="radio" name="destination" value="hk"> 香港</label>
                 <label><input type="radio" name="destination" value="sg"> 新加坡</label>
@@ -134,30 +139,30 @@
               </div>
             </div>
             <div class="form-group">
-              <label for="wechat">微信号</label>
-              <input type="text" id="wechat" name="wechat" placeholder="请输入您的微信号（选填）">
+              <label for="wechat" data-i18n="contact_wechat_label">微信号</label>
+              <input type="text" id="wechat" name="wechat" placeholder="请输入您的微信号（选填）" data-i18n="contact_wechat_placeholder">
             </div>
             <div class="form-group">
-              <label for="phone">联系电话 *</label>
-              <input type="tel" id="phone" name="phone" required placeholder="请输入手机号码">
+              <label for="phone" data-i18n="contact_phone_label">联系电话 *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="请输入手机号码" data-i18n="contact_phone_placeholder">
             </div>
             <div class="form-group">
-              <label for="message">备注（病情描述）</label>
-              <textarea id="message" name="message" placeholder="例：父亲今年58岁，确诊肺癌，想了解香港的治疗方案和费用预估"></textarea>
+              <label for="message" data-i18n="contact_message_label">备注（病情描述）</label>
+              <textarea id="message" name="message" placeholder="例：父亲今年58岁，确诊肺癌，想了解香港的治疗方案和费用预估" data-i18n="contact_message_placeholder"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary form-submit">提交咨询</button>
+            <button type="submit" class="btn btn-primary form-submit" data-i18n="contact_submit">提交咨询</button>
           </form>
           <div class="form-success" id="contactFormSuccess">
             <div class="success-icon">✓</div>
-            <h3>提交成功</h3>
-            <p>感谢您的咨询！我们的专业顾问将在24小时内与您联系，为您提供一对一的就医评估与方案建议。</p>
+            <h3 data-i18n="contact_success_title">提交成功</h3>
+            <p data-i18n="contact_success_text">感谢您的咨询！我们的专业顾问将在24小时内与您联系，为您提供一对一的就医评估与方案建议。</p>
             <hr style="border:none;border-top:1px solid var(--border);margin:28px 0 20px;">
             <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:16px">等待期间，您也可以先了解：</p>
             <div style="display:flex;flex-direction:column;gap:10px;text-align:left">
-              <a href="blog/hk-vs-mainland-checkup.html" style="font-size:0.9rem;color:var(--primary);font-weight:500">→ 香港体检和内地体检有什么区别</a>
-              <a href="blog/hk-petct-guide.html" style="font-size:0.9rem;color:var(--primary);font-weight:500">→ 香港PET-CT检查指南</a>
-              <a href="blog/hk-private-hospital-booking.html" style="font-size:0.9rem;color:var(--primary);font-weight:500">→ 香港私立医院如何预约</a>
-              <a href="blog/hk-visa-guide.html" style="font-size:0.9rem;color:var(--primary);font-weight:500">→ 香港就医需要港澳通行证吗</a>
+              <a href="blog/hk-vs-mainland-checkup.html" style="font-size:0.9rem;color:var(--primary);font-weight:500"><span data-i18n="contact_success_link1">→ 香港体检和内地体检有什么区别</span></a>
+              <a href="blog/hk-petct-guide.html" style="font-size:0.9rem;color:var(--primary);font-weight:500"><span data-i18n="contact_success_link2">→ 香港PET-CT检查指南</span></a>
+              <a href="blog/hk-private-hospital-booking.html" style="font-size:0.9rem;color:var(--primary);font-weight:500"><span data-i18n="contact_success_link3">→ 香港私立医院如何预约</span></a>
+              <a href="blog/hk-visa-guide.html" style="font-size:0.9rem;color:var(--primary);font-weight:500"><span data-i18n="contact_success_link4">→ 香港就医需要港澳通行证吗</span></a>
             </div>
           </div>
         </div>
@@ -169,38 +174,38 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h3>启航国际医疗</h3>
-          <p>致力于为中国客户提供香港及新加坡国际医疗资源咨询与跨境就医协调服务。专业、透明、高效、隐私保护。</p>
+          <h3 data-i18n="footer_title">启航国际医疗</h3>
+          <p data-i18n="footer_desc">致力于为中国客户提供香港及新加坡国际医疗资源咨询与跨境就医协调服务。专业、透明、高效、隐私保护。</p>
         </div>
         <div>
-          <h3>快速链接</h3>
+          <h3 data-i18n="footer_quick">快速链接</h3>
           <ul class="footer-links">
-            <li><a href="about.html">关于我们</a></li>
-            <li><a href="services.html">服务项目</a></li>
-            <li><a href="hospitals.html">医疗机构</a></li>
-            <li><a href="faq.html">常见问题</a></li>
+            <li><a href="about.html"><span data-i18n="nav_about">关于我们</span></a></li>
+            <li><a href="services.html"><span data-i18n="nav_services">服务项目</span></a></li>
+            <li><a href="hospitals.html"><span data-i18n="nav_hospitals">医疗机构</span></a></li>
+            <li><a href="faq.html"><span data-i18n="nav_faq">常见问题</span></a></li>
           </ul>
         </div>
         <div>
-          <h3>服务项目</h3>
+          <h3 data-i18n="footer_services_title">服务项目</h3>
           <ul class="footer-links">
-            <li><a href="services.html#hk-checkup">香港体检</a></li>
-            <li><a href="services.html#specialist">专科预约</a></li>
-            <li><a href="services.html#second-opinion">第二诊疗意见</a></li>
-            <li><a href="services.html#singapore">新加坡转诊</a></li>
+            <li><a href="services.html#hk-checkup"><span data-i18n="service_1_title">香港体检</span></a></li>
+            <li><a href="services.html#specialist"><span data-i18n="service_2_title">专科预约</span></a></li>
+            <li><a href="services.html#second-opinion"><span data-i18n="service_3_title">第二诊疗意见</span></a></li>
+            <li><a href="services.html#singapore"><span data-i18n="sg_transfer_title">新加坡转诊</span></a></li>
           </ul>
         </div>
         <div>
-          <h3>联系我们</h3>
+          <h3 data-i18n="footer_contact_title">联系我们</h3>
           <div class="footer-contact">
-            <p>微信：QihangMedical</p>
-            <p>WhatsApp：<a href="https://wa.me/8618779374714" style="color:#94a3b8">点击直接对话</a></p>
-            <p>邮箱：qihangmedical@outlook.com</p>
+            <p data-i18n="contact_wechat">微信：QihangMedical</p>
+            <p>WhatsApp：<a href="https://wa.me/8618779374714" style="color:#94a3b8"><span data-i18n="footer_whatsapp">点击直接对话</span></a></p>
+            <p data-i18n="contact_email">邮箱：qihangmedical@outlook.com</p>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 启航国际医疗 · Qihang Enterprise Consulting Service Co., Ltd. All rights reserved.</p>
+        <small data-i18n="footer_copyright">&copy; 2025 启航国际医疗 · Qihang Enterprise Consulting Service Co., Ltd. All rights reserved.</small>
       </div>
     </div>
   </footer>
@@ -208,12 +213,15 @@
   <div class="modal-overlay" id="wechatModal">
     <div class="modal">
       <button class="modal-close" id="wechatModalClose">&times;</button>
-      <h3>微信咨询</h3>
+      <h3 data-i18n="contact_wechat_modal_title">微信咨询</h3>
       <img src="images/wechat-qr.jpg" alt="微信二维码" style="width:200px;height:auto;border-radius:12px;margin:12px auto;display:block;box-shadow:0 2px 8px rgba(0,0,0,0.1)">
-      <p>或者扫描下方二维码添加微信获取一对一专业咨询</p>
+      <p data-i18n="contact_wechat_modal_text">或者扫描下方二维码添加微信获取一对一专业咨询</p>
     </div>
   </div>
 
+  <script src="js/i18n.js"></script>
+  <script src="js/i18n/en.js"></script>
+  <script src="js/i18n/zh-hk.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

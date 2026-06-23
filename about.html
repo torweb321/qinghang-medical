@@ -19,71 +19,68 @@
       </a>
       <button class="mobile-toggle" id="mobileToggle" aria-label="菜单">☰</button>
       <nav class="nav" id="nav">
-        <a href="index.html">首页</a>
-        <a href="about.html" class="active">关于我们</a>
-        <a href="services.html">服务项目</a>
-        <a href="hospitals.html">医疗机构</a>
-        <a href="blog.html">健康资讯</a>
-        <a href="faq.html">常见问题</a>
-        <a href="contact.html" class="nav-cta">免费咨询</a>
+        <a href="index.html"><span data-i18n="nav_home">首页</span></a>
+        <a href="about.html" class="active"><span data-i18n="nav_about">关于我们</span></a>
+        <a href="services.html"><span data-i18n="nav_services">服务项目</span></a>
+        <a href="hospitals.html"><span data-i18n="nav_hospitals">医疗机构</span></a>
+        <a href="blog.html"><span data-i18n="nav_blog">健康资讯</span></a>
+        <a href="faq.html"><span data-i18n="nav_faq">常见问题</span></a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav_cta">免费咨询</a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="zh-CN" onclick="i18n.switchTo('zh-CN')">简</button>
+          <button class="lang-btn" data-lang="zh-HK" onclick="i18n.switchTo('zh-HK')">繁</button>
+          <button class="lang-btn" data-lang="en" onclick="i18n.switchTo('en')">EN</button>
+        </div>
       </nav>
     </div>
   </header>
 
   <div class="page-header">
     <div class="container">
-      <h1>关于我们</h1>
-      <p>了解启航国际医疗的使命与服务理念</p>
+      <h1 data-i18n="about_header_title">关于我们</h1>
+      <p data-i18n="about_header_desc">了解启航国际医疗的使命与服务理念</p>
     </div>
   </div>
 
   <section class="section">
     <div class="container">
       <div class="about-content">
-        <h2>公司介绍</h2>
-        <p>
-          启航国际医疗（Qihang International Medical）致力于为中国客户提供
-          国际医疗资源咨询及跨境就医协调服务。我们深耕香港与新加坡两地医疗市场，
-          与当地顶尖私立医院保持紧密协作关系，为每一位客户匹配最适合的医疗机构与专家。
-        </p>
-        <p>
-          我们深知跨境就医涉及语言、文化、流程等多重挑战。因此，从初次咨询
-          到就医完成，我们提供全流程的协调支持——包括病历整理与翻译、医院对接、
-          预约安排、就医陪同及后续随访，确保客户获得无缝、安心的就医体验。
-        </p>
+        <h2 data-i18n="about_intro_title">公司介绍</h2>
+        <p data-i18n="about_intro_p1">启航国际医疗（Qihang International Medical）致力于为中国客户提供国际医疗资源咨询及跨境就医协调服务。我们深耕香港与新加坡两地医疗市场，与当地顶尖私立医院保持紧密协作关系，为每一位客户匹配最适合的医疗机构与专家。</p>
+        <p data-i18n="about_intro_p2">我们深知跨境就医涉及语言、文化、流程等多重挑战。因此，从初次咨询到就医完成，我们提供全流程的协调支持——包括病历整理与翻译、医院对接、预约安排、就医陪同及后续随访，确保客户获得无缝、安心的就医体验。</p>
 
-        <h2>服务原则</h2>
+        <h2 data-i18n="about_principles_title">服务原则</h2>
         <div class="principles-grid">
           <div class="principle-card">
             <div class="principle-icon">🎯</div>
-            <h4>专业</h4>
+            <h4 data-i18n="about_principles_item1">专业</h4>
           </div>
           <div class="principle-card">
             <div class="principle-icon">🔍</div>
-            <h4>透明</h4>
+            <h4 data-i18n="about_principles_item2">透明</h4>
           </div>
           <div class="principle-card">
             <div class="principle-icon">⚡</div>
-            <h4>高效</h4>
+            <h4 data-i18n="about_principles_item3">高效</h4>
           </div>
           <div class="principle-card">
             <div class="principle-icon">🔒</div>
-            <h4>隐私保护</h4>
+            <h4 data-i18n="about_principles_item4">隐私保护</h4>
           </div>
         </div>
 
-        <h2>为什么选择我们</h2>
+        <h2 data-i18n="about_why_title">为什么选择我们</h2>
         <ul>
-          <li><strong>两地资源优势</strong> — 同时覆盖香港与新加坡两大国际医疗中心，为客户提供更多选择</li>
-          <li><strong>全流程服务</strong> — 从病历整理到就医陪同，一站式解决跨境就医痛点</li>
-          <li><strong>个性化匹配</strong> — 根据病情、预算、偏好，推荐最适合的医院与专家</li>
-          <li><strong>中文服务</strong> — 全程中文沟通，消除语言障碍，信息透明对称</li>
+          <li><h3 data-i18n="about_why_1_title">两地资源优势</h3><p data-i18n="about_why_1_desc">同时覆盖香港与新加坡两大国际医疗中心，为客户提供更多选择</p></li>
+          <li><h3 data-i18n="about_why_2_title">全流程服务</h3><p data-i18n="about_why_2_desc">从病历整理到就医陪同，一站式解决跨境就医痛点</p></li>
+          <li><h3 data-i18n="about_why_3_title">个性化匹配</h3><p data-i18n="about_why_3_desc">根据病情、预算、偏好，推荐最适合的医院与专家</p></li>
+          <li><h3 data-i18n="about_why_4_title">中文服务</h3><p data-i18n="about_why_4_desc">全程中文沟通，消除语言障碍，信息透明对称</p></li>
         </ul>
 
-        <h2>企业信息</h2>
+        <h2 data-i18n="about_company_title">企业信息</h2>
         <div class="company-info">
-          <p><strong>运营主体：</strong></p>
-          <p>启航企业咨询服务有限公司</p>
+          <p><strong data-i18n="about_company_entity">运营主体：</strong></p>
+          <p data-i18n="about_company_name">启航企业咨询服务有限公司</p>
           <p>Qihang Enterprise Consulting Service Co., Ltd.</p>
         </div>
       </div>
@@ -94,38 +91,38 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h3>启航国际医疗</h3>
-          <p>致力于为中国客户提供香港及新加坡国际医疗资源咨询与跨境就医协调服务。专业、透明、高效、隐私保护。</p>
+          <h3 data-i18n="footer_title">启航国际医疗</h3>
+          <p data-i18n="footer_desc">致力于为中国客户提供香港及新加坡国际医疗资源咨询与跨境就医协调服务。专业、透明、高效、隐私保护。</p>
         </div>
         <div>
-          <h3>快速链接</h3>
+          <h3 data-i18n="footer_quick">快速链接</h3>
           <ul class="footer-links">
-            <li><a href="about.html">关于我们</a></li>
-            <li><a href="services.html">服务项目</a></li>
-            <li><a href="hospitals.html">医疗机构</a></li>
-            <li><a href="faq.html">常见问题</a></li>
+            <li><a href="about.html"><span data-i18n="nav_about">关于我们</span></a></li>
+            <li><a href="services.html"><span data-i18n="nav_services">服务项目</span></a></li>
+            <li><a href="hospitals.html"><span data-i18n="nav_hospitals">医疗机构</span></a></li>
+            <li><a href="faq.html"><span data-i18n="nav_faq">常见问题</span></a></li>
           </ul>
         </div>
         <div>
-          <h3>服务项目</h3>
+          <h3 data-i18n="footer_services_title">服务项目</h3>
           <ul class="footer-links">
-            <li><a href="services.html#hk-checkup">香港体检</a></li>
-            <li><a href="services.html#specialist">专科预约</a></li>
-            <li><a href="services.html#second-opinion">第二诊疗意见</a></li>
-            <li><a href="services.html#singapore">新加坡转诊</a></li>
+            <li><a href="services.html#hk-checkup"><span data-i18n="service_1_title">香港体检</span></a></li>
+            <li><a href="services.html#specialist"><span data-i18n="service_2_title">专科预约</span></a></li>
+            <li><a href="services.html#second-opinion"><span data-i18n="service_3_title">第二诊疗意见</span></a></li>
+            <li><a href="services.html#singapore"><span data-i18n="sg_transfer_title">新加坡转诊</span></a></li>
           </ul>
         </div>
         <div>
-          <h3>联系我们</h3>
+          <h3 data-i18n="footer_contact_title">联系我们</h3>
           <div class="footer-contact">
-            <p>微信：QihangMedical</p>
-            <p>WhatsApp：<a href="https://wa.me/8618779374714" style="color:#94a3b8">点击直接对话</a></p>
-            <p>邮箱：qihangmedical@outlook.com</p>
+            <p data-i18n="contact_wechat">微信：QihangMedical</p>
+            <p>WhatsApp：<a href="https://wa.me/8618779374714" style="color:#94a3b8"><span data-i18n="footer_whatsapp">点击直接对话</span></a></p>
+            <p data-i18n="contact_email">邮箱：qihangmedical@outlook.com</p>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 启航国际医疗 · Qihang Enterprise Consulting Service Co., Ltd. All rights reserved.</p>
+        <small data-i18n="footer_copyright">&copy; 2025 启航国际医疗 · Qihang Enterprise Consulting Service Co., Ltd. All rights reserved.</small>
       </div>
     </div>
   </footer>
@@ -139,6 +136,9 @@
     </div>
   </div>
 
+  <script src="js/i18n.js"></script>
+  <script src="js/i18n/en.js"></script>
+  <script src="js/i18n/zh-hk.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

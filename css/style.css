@@ -159,6 +159,37 @@ img {
   color: #fff !important;
 }
 
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 12px;
+}
+
+.lang-btn {
+  padding: 3px 7px;
+  font-size: 0.72rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  color: var(--text-light);
+  font-weight: 600;
+  line-height: 1.2;
+  transition: all 0.2s;
+}
+
+.lang-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.lang-btn.active {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
 .mobile-toggle {
   display: none;
   background: none;
@@ -1411,6 +1442,10 @@ img {
 
   .nav.open {
     display: flex;
+  }
+
+  .lang-switcher {
+    margin-left: 0;
   }
 
   .mobile-toggle {

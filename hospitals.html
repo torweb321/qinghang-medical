@@ -19,21 +19,26 @@
       </a>
       <button class="mobile-toggle" id="mobileToggle" aria-label="菜单">☰</button>
       <nav class="nav" id="nav">
-        <a href="index.html">首页</a>
-        <a href="about.html">关于我们</a>
-        <a href="services.html">服务项目</a>
-        <a href="hospitals.html" class="active">医疗机构</a>
-        <a href="blog.html">健康资讯</a>
-        <a href="faq.html">常见问题</a>
-        <a href="contact.html" class="nav-cta">免费咨询</a>
+        <a href="index.html"><span data-i18n="nav_home">首页</span></a>
+        <a href="about.html"><span data-i18n="nav_about">关于我们</span></a>
+        <a href="services.html"><span data-i18n="nav_services">服务项目</span></a>
+        <a href="hospitals.html" class="active"><span data-i18n="nav_hospitals">医疗机构</span></a>
+        <a href="blog.html"><span data-i18n="nav_blog">健康资讯</span></a>
+        <a href="faq.html"><span data-i18n="nav_faq">常见问题</span></a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav_cta">免费咨询</a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="zh-CN" onclick="i18n.switchTo('zh-CN')">简</button>
+          <button class="lang-btn" data-lang="zh-HK" onclick="i18n.switchTo('zh-HK')">繁</button>
+          <button class="lang-btn" data-lang="en" onclick="i18n.switchTo('en')">EN</button>
+        </div>
       </nav>
     </div>
   </header>
 
   <div class="page-header">
     <div class="container">
-      <h1>医疗机构</h1>
-      <p>我们持续关注并积极对接香港及新加坡的优质医疗机构</p>
+      <h1 data-i18n="hospitals_header_title">医疗机构</h1>
+      <p data-i18n="hospitals_header_desc">我们持续关注并积极对接香港及新加坡的优质医疗机构</p>
     </div>
   </div>
 
@@ -136,38 +141,38 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h3>启航国际医疗</h3>
-          <p>致力于为中国客户提供香港及新加坡国际医疗资源咨询与跨境就医协调服务。专业、透明、高效、隐私保护。</p>
+          <h3 data-i18n="footer_title">启航国际医疗</h3>
+          <p data-i18n="footer_desc">致力于为中国客户提供香港及新加坡国际医疗资源咨询与跨境就医协调服务。专业、透明、高效、隐私保护。</p>
         </div>
         <div>
-          <h3>快速链接</h3>
+          <h3 data-i18n="footer_quick">快速链接</h3>
           <ul class="footer-links">
-            <li><a href="about.html">关于我们</a></li>
-            <li><a href="services.html">服务项目</a></li>
-            <li><a href="hospitals.html">医疗机构</a></li>
-            <li><a href="faq.html">常见问题</a></li>
+            <li><a href="about.html"><span data-i18n="nav_about">关于我们</span></a></li>
+            <li><a href="services.html"><span data-i18n="nav_services">服务项目</span></a></li>
+            <li><a href="hospitals.html"><span data-i18n="nav_hospitals">医疗机构</span></a></li>
+            <li><a href="faq.html"><span data-i18n="nav_faq">常见问题</span></a></li>
           </ul>
         </div>
         <div>
-          <h3>服务项目</h3>
+          <h3 data-i18n="footer_services_title">服务项目</h3>
           <ul class="footer-links">
-            <li><a href="services.html#hk-checkup">香港体检</a></li>
-            <li><a href="services.html#specialist">专科预约</a></li>
-            <li><a href="services.html#second-opinion">第二诊疗意见</a></li>
-            <li><a href="services.html#singapore">新加坡转诊</a></li>
+            <li><a href="services.html#hk-checkup"><span data-i18n="service_1_title">香港体检</span></a></li>
+            <li><a href="services.html#specialist"><span data-i18n="service_2_title">专科预约</span></a></li>
+            <li><a href="services.html#second-opinion"><span data-i18n="service_3_title">第二诊疗意见</span></a></li>
+            <li><a href="services.html#singapore"><span data-i18n="sg_transfer_title">新加坡转诊</span></a></li>
           </ul>
         </div>
         <div>
-          <h3>联系我们</h3>
+          <h3 data-i18n="footer_contact_title">联系我们</h3>
           <div class="footer-contact">
-            <p>微信：QihangMedical</p>
-            <p>WhatsApp：<a href="https://wa.me/8618779374714" style="color:#94a3b8">点击直接对话</a></p>
-            <p>邮箱：qihangmedical@outlook.com</p>
+            <p data-i18n="contact_wechat">微信：QihangMedical</p>
+            <p>WhatsApp：<a href="https://wa.me/8618779374714" style="color:#94a3b8"><span data-i18n="footer_whatsapp">点击直接对话</span></a></p>
+            <p data-i18n="contact_email">邮箱：qihangmedical@outlook.com</p>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 启航国际医疗 · Qihang Enterprise Consulting Service Co., Ltd. All rights reserved.</p>
+        <small data-i18n="footer_copyright">&copy; 2025 启航国际医疗 · Qihang Enterprise Consulting Service Co., Ltd. All rights reserved.</small>
       </div>
     </div>
   </footer>
@@ -181,6 +186,9 @@
     </div>
   </div>
 
+  <script src="js/i18n.js"></script>
+  <script src="js/i18n/en.js"></script>
+  <script src="js/i18n/zh-hk.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
