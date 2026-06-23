@@ -26,24 +26,27 @@
 </head>
 <body>
   <header class="header">
-    <nav class="nav">
-      <div class="container nav__container">
-        <a href="../index.html" class="nav__logo">启航国际医疗</a>
-        <ul class="nav__menu">
-          <li><a href="../index.html"><span data-i18n="nav_home">首页</span></a></li>
-          <li><a href="../services.html"><span data-i18n="nav_services">服务项目</span></a></li>
-          <li><a href="../blog/index.html" class="active"><span data-i18n="nav_blog">健康资讯</span></a></li>
-          <li><a href="../about.html"><span data-i18n="nav_about">关于我们</span></a></li>
-          <li><a href="../contact.html"><span data-i18n="nav_contact">免费咨询</span></a></li>
-        </ul>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">航</span>
+        启航国际医疗
+      </a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="菜单">☰</button>
+      <nav class="nav" id="nav">
+        <a href="../index.html"><span data-i18n="nav_home">首页</span></a>
+        <a href="../about.html"><span data-i18n="nav_about">关于我们</span></a>
+        <a href="../services.html"><span data-i18n="nav_services">服务项目</span></a>
+        <a href="../hospitals.html"><span data-i18n="nav_hospitals">医疗机构</span></a>
+        <a href="../blog/index.html" class="active"><span data-i18n="nav_blog">健康资讯</span></a>
+        <a href="../faq.html"><span data-i18n="nav_faq">常见问题</span></a>
         <a href="../contact.html" class="nav-cta" data-i18n="nav_cta">免费咨询</a>
         <div class="lang-switcher">
           <button class="lang-btn active" data-lang="zh-CN" onclick="i18n.switchTo('zh-CN')">简</button>
           <button class="lang-btn" data-lang="zh-HK" onclick="i18n.switchTo('zh-HK')">繁</button>
           <button class="lang-btn" data-lang="en" onclick="i18n.switchTo('en')">EN</button>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
   <div class="page-header" data-layout="article">
