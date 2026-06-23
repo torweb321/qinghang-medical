@@ -29,12 +29,14 @@ export async function onRequest(context) {
   var services = Array.isArray(data.service) ? data.service.join(', ') : (data.service || '未选择');
   var destination = data.destination === 'other' && data.destination_other ? data.destination_other : (data.destination || '未选择');
 
+  var genderMap = { male: '男', female: '女' };
   var text = [
     '📋 新咨询',
     '━━━━━━━━━━━━━',
     '⏰ ' + timestamp,
     '━━━━━━━━━━━━━',
     '👤 姓名: ' + data.name,
+    '⚤ 性别: ' + (genderMap[data.gender] || '未填写'),
     '🎂 年龄: ' + (data.age || '未填写'),
     '🏙 城市: ' + (data.city || '未填写'),
     '📋 项目: ' + services,
@@ -82,7 +84,7 @@ export async function onRequest(context) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          name: data.name, age: data.age || '', city: data.city || '',
+          name: data.name, gender: data.gender || '', age: data.age || '', city: data.city || '',
           service: services, destination: destination,
           wechat: data.wechat || '', phone: data.phone,
           message: data.message || '', timestamp: timestamp
